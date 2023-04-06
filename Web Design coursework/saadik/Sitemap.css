@@ -1,0 +1,65 @@
+body {
+	margin: 0;
+	top: 0;
+	left: 0;
+	padding: 0;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	width: 100%;
+			
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins";
+	outline: none;
+}
+.Div_svg svg {
+	display:center;
+		
+}
+.Div_svg {
+	background-image: url("Sitemap_BG.jpg");
+      background-repeat: no-repeat;
+	background-size: cover;
+	height:90%;
+	width:100%;
+}
+.Div_mid{
+	background-color:#ffdc51;
+}
+svg ellipse {
+	fill:#dcdde0;
+	stroke: #FDB801 !important;
+	stroke-width: 2px;
+}
+.svg_holder svg{
+	width: 100vw;
+	height: 100vh;
+	left: -12%;
+	top: 50px;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: static;
+	display: flex;
+}
+svg .svg_button text{			
+	transform: translate(-10px,-10px);
+			
+}
+.svg_button ellipse{
+	transition: fill 0.4s, stroke 0.5s;	
+}
+
+.svg_button:hover ellipse{
+	fill:#FDB801;
+	cursor:pointer;	
+}
+
+.text:hover{
+	cursor:pointer;			
+}

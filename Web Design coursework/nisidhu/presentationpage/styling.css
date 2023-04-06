@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@keyframes intro {
+    0%, 100%{
+        opacity : 0%;
+    }
+    40%, 90% {
+        opacity : 100%;
+    }
+}
+
+
+*, *::before, *::after { 
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+
+    margin : 0;
+    box-sizing : border-box;
+}
+
+body {
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.overview {
+    position: relative;
+    height : 100vh;
+
+    background-image: url("images/grassfield1.webp");
+    background-size : cover;
+
+    z-index : 0;
+}
+
+.title, .center-card, .footer{
+    opacity : 0%;
+    animation : intro 4s;
+}
+
+.title {
+    position : absolute;
+
+    text-align : center;
+
+    margin-left : 50%;
+    margin-top : 12vh;
+    transform : translateX(-50%) translateY(-50%);
+}
+
+
+
+.title h1 {
+    font-size: 5rem;
+
+    color : white;
+
+    text-shadow: 0px 0px 5px white;
+
+    transition: text-shadow 250ms;
+}
+
+:root {
+    --text-shadow-hover: rgba(255, 255, 255, 0.75);
+}
+
+.title h1:hover {
+    text-shadow: 1px 1px 10px var(--text-shadow-hover), 1px -1px 10px var(--text-shadow-hover), -1px 1px 10px var(--text-shadow-hover), -1px -1px 10px var(--text-shadow-hover);
+}
+
+.center-card::before {
+    content: '';
+    position: absolute;
+
+    background-color : rgb(0, 0, 0);
+    border-radius: 5px;
+
+    top: 0;
+    bottom : 0;
+    left : 0;
+    right : 0;
+
+    z-index: -1;
+}
+
+.center-card::after {
+    content: '';
+    position: absolute;
+
+    background-image : url("images/image.jpg");
+    background-size : cover;
+
+    border-radius : 5px;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: -1;
+
+    transition : opacity 500ms;
+}
+
+.center-card:hover::after {
+    opacity : 60%
+}
+
+.center-card {
+    position: absolute;
+
+    inset : 0;
+    margin : auto;
+
+    width: 600px;
+    height: 350px;
+    background-color: rgb(128, 128, 128, 0.1);
+
+    box-shadow : 0px 0px 5px black;
+
+    border-radius : 5px;
+
+    transition : box-shadow 500ms;
+}
+
+.center-card:hover {
+    box-shadow: 0px 0px 25px 1px rgb(0, 0, 0);
+}
+
+.list {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+
+    height : 100%;
+}
+
+.name-list {
+    list-style : none;
+    padding : 10px;
+    
+    display : flex;
+    flex-direction: column;
+    row-gap : 10px;
+
+    background-color :rgba(255, 255, 255, 0.5);
+    border-radius : 5px;
+
+    transition-property: background-color, box-shadow;
+    transition-duration: 500ms;
+}
+
+.name-list:hover {
+    background-color : rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.name-list li{
+    font-size : 1.2rem;
+
+    padding : 5px;
+    cursor : default;
+
+    transition : color 500ms;
+}
+
+.name-list:hover > li {
+    color : white;
+}
+
+.name-list li::after {
+    content : '';
+    display : block;
+
+    height : 1px;   
+    width : 0%;
+
+    background-color : black;
+    transition : width 750ms 50ms, background-color 750ms 50ms;
+}
+
+.name-list li:hover::after {
+    width : 100%;
+    
+    background-color : white;
+}
+
+.name-list li span {
+    font-family : "Noto Sans", sans-serif;
+    font-weight: 400 ;
+}
+
+.footer {
+    position : absolute;
+    bottom : 0;
+    right : 0;
+    left : 0;
+    text-align: center;
+}
+
+.content {
+    font-size : 1.2rem;
+    color : white;
+}
+
+.content 
+    p{
+        font-weight : 500;
+    }
+    a {
+        font-weight: bold;
+    }
+    a:link {
+        color : white;
+    }
+
+    a:visited {
+        color : rgb(255, 255, 255);
+    }

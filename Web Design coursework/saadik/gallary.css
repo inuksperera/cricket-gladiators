@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --yellow: #FDB801;
+    --lightwhite: #d1d1d173;
+    --white: #fff;
+    --lightminiwhite: rgb(211, 211, 211);
+    --lightblue: #151F2E;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    outline: none;
+}
+/*thumbnail*/
+/* header background */
+
+.title-bg-head {
+    background: linear-gradient(0deg, rgba(0, 89, 255, 0.137), rgba(0, 89, 255, 0.123)), url("https://wallpapers.com/images/hd/sri-lanka-cricket-malinga-back-pose-l9a136pjzcms31o2.jpg");
+    width: 100%;
+    height: 70vh;
+    background-position: center ;
+    background-size: cover;
+}
+
+.title-bg-head h3 {
+    color: var(--white);
+    font-size: 5rem;
+    z-index: 200;
+}
+
+.bg-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    position: relative;
+}
+
+.bg-header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 240px;
+    height: 100%;
+    background: linear-gradient(-90deg, rgba(2, 9, 22, 0), rgba(2, 9, 22, 0.63), rgb(2, 9, 22));
+    z-index: 999;
+    bottom: 0;
+    left: 0px;
+}
+
+.title-bg-head::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(to bottom, rgba(2, 9, 22, 0), rgba(2, 9, 22, 0.438), rgb(2, 9, 22));
+    z-index: 999;
+    bottom: 0;
+}
+
+.bg-header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 240px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(2, 9, 22, 0), rgba(2, 9, 22, 0.63), rgb(2, 9, 22));
+    z-index: 999;
+    bottom: 0;
+    left: auto;
+    right: 0;
+}
+
+.bg-header p {
+    color: var(--white);
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.bg-header span {
+    margin-top: 30px;
+    color: var(--white);
+    display: flex;
+    z-index: 1500;
+    margin-bottom: 4px;
+    font-size: 1.8rem;
+}
+
+.bg-header span a {
+    display: flex;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    align-items: center;
+}
+
+.bg-header span i {
+    margin-right: 16px;
+}
+
+.bg-header span a:hover {
+    fill: #FDB801;
+    color: var(--yellow);
+    transition: all 0.2s ease-in;
+}
+
+section {
+		width: 100%;
+		position: relative;
+		margin-bottom: 40px;
+		height: fit-content;
+		display: block;
+}
+.section {
+		width: 100%;
+		position: relative;
+		margin-bottom: 40px;
+		height: fit-content;
+		display: block;
+}
+body {
+    background-color: #020916;
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+.thumb-img {
+    display:flex;
+    justify-content:space-evenly;
+    margin: 30px 50px;
+    margin-top: 80px;
+    
+}
+.thumb-img img{
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	width: 180px;
+      border-radius: 6px;
+}
+.thumb-img img:hover{
+	opacity: 0.6;
+}
+.mini-img {
+	cursor:pointer;
+}
+form select{
+	width: 260px;
+    padding: 12px 50px;
+    background-color: #23385E;
+    border: none;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 1.15rem;
+    outline: none;
+	font-weight: 600;
+	font-family: "poppins",'FontAwesome';
+}
+.form-clr{
+	display: flex;
+	justify-content: space-evenly;
+
+}
+select {
+	font-family: 'FontAwesome', 'poppins';
+	appearance: none;
+  }
+select:hover{
+
+	color: var(--yellow);
+}
+  .brush1,.brush2{
+	  position: relative;
+  }
+  .brush1{
+	  margin-left:120px;
+  }
+  .brush2{
+	  margin-right:120px;
+  }
+.dropdown::after{
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: rgb(221, 221, 221);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    padding: 0 0 2px;
+    border-bottom: 1px solid rgb(167, 166, 166);
+    left: 220px;top:13px;
+    position: absolute;
+    pointer-events: none;}
+
+.arrow-mod::after{
+	left: 220px;
+}
+/*Expended detail*/
+
+.movie-card{
+   margin-bottom: 60px;
+   margin-top:70px;
+   font: 14px/22px "Lato", Arial, sans-serif;
+   color: #A9A8A3;
+	/* padding: 40px 0; */
+   }
+
+ .container-thumbnail {
+	margin: 0 auto;
+	width: 900px;
+	height: 640px;
+	background: #1e2b44;
+	border-radius: 5px;
+	position: relative;
+ }
+#thumbnail-large,#thumbnail-large2,#thumbnail-large3,#thumbnail-large4,#thumbnail-large5{
+	display: none;
+	margin-top: 20px;
+
+}
+
+ .cover {
+	position: absolute;
+	top: 130px;
+	left: 25px;
+	z-index: 2;
+	width: 220px;
+	box-shadow: 5px 5px 8px #0f0f0f38;
+
+  }
+
+.hero {
+	height: 342px;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+  }
+
+ 
+
+.movie-card  .details {
+	padding: 190px 0 0 280px;
+  }
+  .movie-card .details .title1 {
+	color: white;
+	font-size: 44px;
+	margin-bottom: 13px;
+	position: relative;
+  }
+
+.movie-card .description {
+	bottom: 0px;
+	height: 200px;
+	font-size: 16px;
+	line-height: 26px;
+	color: #0f0f0f;
+  }
+.description {
+    margin-top: 0px;
+    display: inline;
+    padding:  0px;
+}
+.column2 {
+	padding-left: 41px;
+	padding-top: 30px;
+	margin-left: 20px;
+	width: 620px;
+	float: right;
+  }
+
+  .description p{
+	  color: rgb(219, 219, 219);
+  }
+
+
+
+

@@ -1,0 +1,284 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gallary</title>
+	<link rel="stylesheet" href="nav_style.css">
+	<link rel="stylesheet" href="gallary.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" >
+	<script src="tumbnail.js"></script>
+</head>
+<body id="body">
+	<div class="nav">
+        <nav>
+            <a href="../inuka/studentDetails.html">About Us</a>
+            <a href="../saadik/Student_4_1.html">Sitemap</a>
+            <a href="../yadurshan/comment.html">Comments</a>
+            <a href="../inuka/Quiz.html">Quiz</a>
+            <a href="../nisidhu/shoppage/shop.html">Shop</a>
+            <a href="../saadik/Student_4_2.html" class="active">Gallery</a>
+            <a href="../yadurshan/Homepage.html"  >Home</a>
+
+            <a id="company_name">Cricket Gladiators</a>
+
+            <img style="border-radius: 0;" src="imgs/logo.jpeg" alt="logo" height="63">
+
+        </nav>
+    </div>
+
+
+	<section>
+			<div class="title-bg-head">
+				
+					<div class="bg-header">
+						<h3>IMAGES</h3>
+						<p>This page contains the images of all the recently released movies. It is very responsive as it will give description of the movies which you currently click on. It will provide you with the released date, ratings given by users, the cast of the movie and the synopsis of the movie. Go below to see the images.This is done in-order to make it convenient for the viewers to know about the movie in detail so they can watch the movie whole-heartedly.</p>
+						<span>
+							<a href="#mid-sec">
+								<i class="fa-solid fa-circle-chevron-down"></i>
+							  Learn More
+							</a>
+						</span>
+					</div>
+				
+			</div>
+	</section>
+	
+		<div class="section">
+            <div>
+                <form  class="form-clr">
+					<div class="brush1">
+						<div class="form-group dropdown">
+							<select onchange="Bg_Color();" name="bgcolor" id="bg_switch">
+								<option value="default" hidden> Page Color</option>
+								<option value="white">White</option>
+								<option value="Black">Black</option>
+								<option value="#46E263">Green</option>
+								<option value="#07467c">Blue</option>
+							</select>
+						</div>
+					</div>
+                <div class="brush2">
+                <div class="form-group dropdown arrow-mod">
+                    <select onchange="Txt_Color();" name="bgcolor" id="txt_switch">
+                        <option value="" hidden> Text Color</option>
+                        <option value="white">White</option>
+                        <option value="Black">Black</option>
+                        <option value="Green">Green</option>
+                        <option value="Blue">Blue</option>
+                    </select></div></div>
+				</form>
+            </div>
+        </div>
+	
+	<div class="section" id="mid-sec">
+        <div class="thumb-img">
+            <div class="mini-img" id="img1" onmouseover="mouseOver1()"><img src="imgs/tumbnail/i_1.jpg" alt="" ></div>
+            <div class="mini-img" id="img2" onmouseover="mouseOver2()"><img src="imgs/tumbnail/i_2.jpg" alt=""></div>
+            <div class="mini-img" id="img3" onmouseover="mouseOver3()"><img src="imgs/tumbnail/i_3.jpg" alt=""></div>
+            <div class="mini-img" id="img4" onmouseover="mouseOver4()"><img src="imgs/tumbnail/i_4.jpg" alt=""></div>
+            <div class="mini-img" id="img5" onmouseover="mouseOver5()"><img src="imgs/tumbnail/i_5.jpg" alt=""></div>
+ 
+
+        </div>
+    </div>
+	<!-- image 1  -->
+    <!-- expanded detialed section of a selected movie -->
+    <div class="movie-card" >
+  
+        <div class="container-thumbnail" id="thumbnail-large1">
+          
+          <a href="#"><img src="imgs/tumbnail/i_1.jpg" alt="cover" class="cover" ></a>
+              
+          <div class="hero  im1">
+                  
+            <div class="details">
+            
+              <div class="title1">History of cricket </div>
+      
+              
+            </div> <!-- end details -->
+            
+          </div> <!-- end hero -->
+          
+          <div class="description">
+            
+            
+            <div class="column2">
+              
+              <p>Cricket is believed to have originated in England in the 16th century and has since spread to become a global sport. The first international cricket match was played in 1844 between Canada and the United States, while the first official Test match was played in 1877 between England and Australia. The sport has seen many great players over the years, including Don Bradman, Sachin Tendulkar, and Viv Richards. Today, cricket is played in many different formats, including Test matches, One Day Internationals, and Twenty20 matches, with the sport's popularity continuing to grow around the world.
+              </p>
+              
+              
+              
+              
+              
+            </div> <!-- end column2 -->
+          </div> <!-- end description -->
+          
+         
+        </div> <!-- end container-thumbnail -->
+      </div> 
+    
+    <!-- image 2 -->
+      <!-- expanded detialed section of a selected movie -->
+    <div class="movie-card" >
+  
+        <div class="container-thumbnail" id="thumbnail-large2">
+          
+          <a href="#"><img src="imgs/tumbnail/i_2.jpg" alt="cover" class="cover" ></a>
+              
+          <div class="hero im2">
+                  
+            <div class="details">
+            
+              <div class="title1">ICC World Cup</div>
+      
+              
+              
+            </div> <!-- end details -->
+            
+          </div> <!-- end hero -->
+          
+          <div class="description">
+            
+            
+            <div class="column2">
+              
+              <p>The ICC World Cup is an international cricket championship tournament held every four years. It features the top teams from around the world competing in a One Day International format. The tournament began in 1975 and has since become one of the most prestigious events in cricket. The current format features 10 teams competing in a round-robin and knockout format. The most successful team in the tournament's history is Australia with five titles, while the current champions are England, who won their first title in 2019.
+              </p>
+              
+              
+            </div> <!-- end column2 -->
+          </div> <!-- end description -->
+          
+         
+        </div> <!-- end container-thumbnail -->
+      </div> 
+
+    <!-- image 3 -->
+    <!-- expanded detialed section of a selected movie -->
+    <div class="movie-card" >
+
+    <div class="container-thumbnail" id="thumbnail-large3">
+        
+        <a href="#"><img src="imgs/tumbnail/i_3.jpg" alt="cover" class="cover" ></a>
+            
+        <div class="hero im3">
+                
+        <div class="details">
+        
+            <div class="title1">Women's cricket </div>    
+            
+            
+        </div> <!-- end details -->
+        
+        </div> <!-- end hero -->
+        
+        <div class="description">
+        
+        <div class="column2">
+            
+            <p>	Women's cricket is a growing sport that is gaining popularity around the world.
+				The game is played with the same rules and equipment as men's cricket but with some minor modifications.
+				The international women's cricket scene is dominated by teams from Australia, England, and India.
+				The Women's Cricket World Cup is held every four years, with Australia winning the most titles.
+				The sport has seen an increase in professionalism in recent years, with more opportunities for women to play at the highest level and earn a living from the sport.</p>
+                 
+        </div> <!-- end column2 -->
+        </div> <!-- end description -->
+        
+        
+    </div> <!-- end container-thumbnail -->
+    </div> 
+
+        <!-- image 4 -->
+    <!-- expanded detialed section of a selected movie -->
+    <div class="movie-card" >
+
+        <div class="container-thumbnail" id="thumbnail-large4">
+            
+            <a href="#"><img src="imgs/tumbnail/i_4.jpg" alt="cover" class="cover" ></a>
+                
+            <div class="hero im4">
+                    
+            <div class="details">
+            
+                <div class="title1">Kumar Sangakkara </div>
+        
+                
+                
+            </div> <!-- end details -->
+            
+            </div> <!-- end hero -->
+            
+            <div class="description">
+            
+            
+            <div class="column2">
+                
+                <p>Kumar Sangakkara is a former Sri Lankan cricketer who is widely regarded as one of the greatest batsmen in the history of the sport. 
+					He played as a wicketkeeper-batsman and holds numerous records in international cricket, including the most runs scored in ODI cricket by a left-handed batsman.
+					Sangakkara is also known for his leadership skills and was appointed as the captain of the Sri Lankan cricket team in 2009.
+					After retiring from cricket, he has taken up commentary and various administrative roles in the sport.
+                </p>
+                
+                
+                
+                
+                
+            </div> <!-- end column2 -->
+            </div> <!-- end description -->
+            
+            
+        </div> <!-- end container-thumbnail -->
+        </div> 
+        <button onclick="topFunction()" id="top" title="Go to top"><i class="arrow2 up"></i></button>
+
+            <!-- image 5 -->
+    <!-- expanded detialed section of a selected movie -->
+    <div class="movie-card" >
+
+        <div class="container-thumbnail" id="thumbnail-large5">
+            
+            <a href="#"><img src="imgs/tumbnail/i_5.jpg" alt="cover" class="cover" ></a>
+                
+            <div class="hero im5">
+                    
+            <div class="details">
+            
+                <div class="title1">MS Dhoni</div>
+        
+                                 
+            </div> <!-- end details -->
+            
+            </div> <!-- end hero -->
+            
+            <div class="description">
+            
+            
+            
+            <div class="column2">
+                
+                <p>	MS Dhoni is a former Indian cricketer and captain of the Indian national team.
+					He is widely regarded as one of the greatest cricketing minds and finishers of all time.
+					He led India to numerous victories, including the 2007 ICC World Twenty20, the 2010 and 2016 Asia Cups, and the 2011 ICC Cricket World Cup. 
+					Dhoni is also known for his calm demeanor and strategic acumen on the field.
+					He retired from international cricket in August 2020, leaving behind a legacy that will be remembered for years to come. 
+                </p>
+                
+                
+                
+                
+            </div> <!-- end column2 -->
+            </div> <!-- end description -->
+            
+            
+        </div> <!-- end container-thumbnail -->
+    </div>
+		<footer>
+			<p>Copyright &copy;2023 Cricket Gladiators. Designed By<a href="Student_4_3.html">@Mohammed Saadik</a></p>
+		</footer>
+</body>
+</html>

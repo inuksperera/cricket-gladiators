@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Gladiators - Shop</title>
+
+    <link rel="stylesheet" href="shopstyling.css">
+    <link rel="stylesheet" href="navbar.css">
+
+    <script defer src="shopscript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="overview">
+
+            <!-- Navbar made by Student 2 and uses homepage.css-->
+            <div class="nav">
+                <nav>
+                    <a href="../../inuka/studentDetails.html">About Us</a>
+                    <a href="../../saadik/Student_4_1.html">Sitemap</a>
+                    <a href="../../yadurshan/comment.html">Comments</a>
+                    <a href="../../inuka/Quiz.html">Quiz</a>
+                    <a href="shop.html" class="active" >Shop</a>
+                    <a href="../../saadik/Student_4_2.html">Gallery</a>
+                    <a href="../../yadurshan/Homepage.html">Home</a>
+        
+        
+                    <img style="border-radius: 0;" src="reallogo.jpeg" alt="logo" height="63" width="63">
+                    <a id="company_name">Cricket Gladiators</a>
+                </nav>
+            </div>
+
+            <div class="total-overview">
+                
+                    <div class="shop-overview">
+                        <div class="products">
+                            <div class="product-title">
+                                <h1>The products we offer</h1>
+                            </div>
+                            <div class="items">
+                                <div class="item">
+                                    <img src="shopimages/SSKashmir.webp" alt="Cricket Bat image">
+                                    <div class="info" id="info1">
+                                        <p class="prodname" id="name1">SS Kashmir</p>
+                                        <p class="prodtype">Cricket Bat</p>
+                                        <p class="prodprice" id="price1">Price: &pound;100</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="shopimages/redcricketball.webp" alt="Cricket Ball image">
+                                    <div class="info">
+                                        <p class="prodname" id="name2">Red Leather</p>
+                                        <p class="prodtype">Cricket Ball</p>
+                                        <p class="prodprice" id="price2">Price: &pound;5</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="shopimages/ShreyMaster.webp" alt="Cricket Helmet image">
+                                    <div class="info"  id="info3">
+                                        <p class="prodname" id="name3">Shrey Master Class</p>
+                                        <p class="prodtype">Cricket Helmet</p>
+                                        <p class="prodprice" id="price3">Price: &pound;80</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <form  action="mailto:cricketgladiators07@gmail.com" method="post">
+
+                                <div class="product-options">
+                                    <label for="bat">Cricket Bat: </label>
+                                    <select name="CricketBats" id="bat">
+                                        <option value="sskashmir" selected>SS Kashmir Willow</option>
+                                        <option value="caplus">CA Plus 12000</option>
+                                    </select>
+                                    <label for="ball">Cricket Ball: </label>
+                                    <select name="CricketBalls" id="ball">
+                                        <option value="red" selected>Red</option>
+                                        <option value="white">White</option>
+                                    </select>
+                                    <label for="helmet">Cricket Ball: </label>
+                                    <select name="CricketBalls" id="helmet">
+                                        <option value="smc" selected>Shrey Master Class</option>
+                                        <option value="dsc">DSC Guard</option>
+                                    </select>
+                                </div>
+
+                                <div class="amount-info">
+                                    
+                                    <label for="batamount">Cricket Bat Amount: </label>
+                                    <input type="number" value="0" min="0" max="99" name="batnumber" class="numbertype" id="batamount">
+                                    <label for="ballamount">Cricket Ball Amount: </label>
+                                    <input type="number" value="0" min="0" max="99" name="ballnumber" class="numbertype" id="ballamount">
+                                    <label for="helmetamount">Cricket Helmet Amount: </label>
+                                    <input type="number" value="0" min="0" max="99" name="helmetnumber" class="numbertype" id="helmetamount">
+                                </div>
+
+                                <div class="user-info">
+                                    <label for="name">Name: </label>
+                                    <input type="text" id="name" name="name">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email">
+                                    <label for="address">Address: </label>
+                                    <input type="text" id="address" name="address">
+                                </div>
+                                    
+                                <div class="form-buttons">
+                                        <input type="reset" id="resetbutton">
+                                        <input type="submit" id="submitbutton" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="checkout">
+                        <div class="checkout-title">
+                            <h1>Checkout</h1>
+                        </div>
+                        <div class="final-products">
+                            <div class="total-bat">
+                                <p id="checkoutbat">Cricket Bat: &pound;0</p>
+                            </div>
+                            <div class="total-ball">
+                                <p id="checkoutball">Cricket Ball: &pound;0</p>
+                            </div>
+                            <div class="total-helmet">
+                                <p id="checkouthelmet">Cricket Helmet: &pound;0</p>                                
+                            </div>
+                        </div>
+
+                        <div class="total">
+                            <h1>Total: <span id="totalamount">&pound;0</span></h1>
+                        </div>
+
+                    </div>
+            </div>
+
+
+            <div class="pageeditor">
+                <a class="page" href="pageeditor.html">Nisidhu Silva - Page Editor<br>Copyright &copy;2023 Cricket Gladiators.</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

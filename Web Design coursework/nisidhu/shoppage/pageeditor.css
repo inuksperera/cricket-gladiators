@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+*, *::before, *::after {
+    margin : 0;
+    padding : 0;
+
+    box-sizing : border-box;
+
+    font-family : 'Roboto', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    min-width : 100vw;
+
+    background-color : rgb(193, 247, 179);
+}
+
+.overview {
+    height : 100%;
+    width : 100%;
+}
+
+.main {
+    height : 100%;
+
+    padding-bottom : 10px;
+}
+
+.title {
+    text-align: center;
+    padding : 25px 0px;
+}
+
+.studentdet {
+    background-color : rgba(0, 0, 0, 0.25);
+    display : inline-block;
+
+    padding : 10px 25px;
+    margin-left : 1rem;
+
+    border-radius : 5px;
+}
+
+.studentdet p {
+    margin : 5px 0px;
+}
+
+.tasks {
+    display : flex;
+    flex-direction: column;
+    margin : 0 1vw;
+    margin-top : 1rem;
+
+    padding : 1rem 1%;
+    border-radius : 5px;
+    background-color : rgba(0, 0, 0, 0.15);
+
+    height : 100%;
+}
+
+.tasks h2 {
+    font-size: 2rem;
+    font-weight: 700;
+
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.tasks p {
+    margin-top : 5px;
+
+    font-weight: 300;
+    width : 50%;
+}

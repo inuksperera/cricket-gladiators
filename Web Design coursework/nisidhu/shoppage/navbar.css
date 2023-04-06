@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* replace the previous css code with this in the css file */
+
+
+
+
+        .nav {
+            display: grid;
+            background-color: #15295e;
+            overflow: hidden;
+            position: fixed;
+            z-index:1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 63px;
+        }
+
+        .nav * {
+            font-family : "Roboto Condensed", monospace;
+        }
+
+        /* Style the links inside the navigation bar */
+        .nav a {
+            float: right;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 16.5px 23px;
+            text-decoration: none;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 25px;
+        }
+
+        /* Change the color of links on hover */
+        .nav a:hover {
+            background-color: #0a50a1;
+            color: #ffcc00;
+        }
+
+        /* Add a color to the active/current link */
+        .nav a.active {
+            background-color: #ffcc00;
+            color: rgb(0, 0, 0);
+        }
+
+        #company_name{
+            float : none;
+            position: relative;
+            /* left: -100px; */
+            font-size: 34px;
+            font-weight: bold;
+            color:#ffcc00;
+            pointer-events: none;
+            padding : 11px 0px;
+            bottom : 20px;
+            padding-inline-start: 5px;
+        }

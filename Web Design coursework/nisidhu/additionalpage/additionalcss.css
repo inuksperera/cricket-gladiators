@@ -1,0 +1,144 @@
+
+:root {
+    --color1 : #070755;
+    --color2 : gold;
+}
+
+*, *::before, *::after {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+
+    color : white;
+}
+
+p {
+    font-size: 1rem;
+}
+
+body{
+    background: url(images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    position : relative;
+    font-family :Arial, Helvetica, sans-serif;
+    min-height : 170vh;
+    max-height : 300vh;
+
+}
+
+.overview {
+    width : 100%;
+    max-height : 300vh;
+}
+
+#return {
+    padding : 10px;
+}
+
+.title {
+    position : absolute;
+    display : block;
+    margin-top : 15vh;
+    text-align: center;
+    width  : 100%;
+}
+
+.title h1 {
+    cursor : default;
+    text-decoration : underline 2px;
+    color : white;
+}
+
+.content {
+    position: absolute;
+    
+    width : 75vw;
+
+    margin-left : 12.5vw;
+    margin-top : 25vh;
+    padding : 10px;
+
+    background-color : rgba(46, 9, 255, 0.6);
+
+    border : 2px solid var(--color2);
+    border-radius : 5px;
+}
+
+.content p:first-child {
+    font-size : 1.5rem;
+
+    border : 1px solid var(--color2);
+    border-radius : 5px;
+    padding : 5px;
+    margin-bottom : 10px;
+}
+
+.legend {
+    padding : 5px;
+    padding-left : 10px;
+
+    border : 1px solid var(--color2);
+    border-radius : 5px;
+}
+
+
+.legend h1 {
+    margin-top : 5px;
+}
+
+.legend p {
+    margin-top: 10px;
+    margin-bottom : 5px;
+    width : 70%;
+}
+
+.image {
+    border-radius : 3px; 
+    margin : 5px 0px;
+}
+
+
+#brianlara {
+    width : 320px;
+    height : 242px;
+
+    background-image: url(images/brianlara.jpg);
+    background-size : cover;
+}
+
+#donbradman {
+    width : 400px;
+    height : 300px;
+
+    background-image : url("images/donbradman.webp");
+    background-size : cover;
+}
+
+#totop { 
+    margin-top : 15px;
+    margin-bottom : -5px;
+    display : inline-block;
+    margin-left : 50%;
+    transform : translateX(-50%);
+}
+
+a {
+    text-underline-offset : 1px;
+    transition : text-underline-offset 250ms;
+}
+
+a:hover {
+    text-underline-offset: 3px;
+}
+
+.pageeditor {
+    display : flex;
+    justify-content: center;
+}
+
+#pagelink {	
+    text-align : center;
+}
