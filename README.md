@@ -19,11 +19,9 @@ A group project developed as a cricket-themed information website as part of a W
 
 As part of the development team, I was primarily responsible for:
 
-- Developing the **Quiz** functionality using JavaScript
-- Designing and implementing the **About Us** page
-- Designing and implementing the **Greatest World Cup Matches in History** page
+- Developing the Quiz, About Us and Greatest World Cup Matches in History pages
 - Combining the webpages and linking them together to create a cohesive website
-- Creating a **Personal Contributions Page** documenting my work on the project
+- Creating a Personal Contributions Page documenting my work on the project
 
 ### Technologies Used
 
